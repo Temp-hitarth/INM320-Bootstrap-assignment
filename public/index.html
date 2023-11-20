@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>INM320 Bootsrap</title>
+    <title>INM320 Bootstrap</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
 </head>
 <!--Sidbar 2 column-->
 <body class="d-flex">
-    <div class="container-fluid min-vh-100">
-        <div class="row">
-            <!--sidbar-->
-            <div class="col-12 col-sm-2 bg-dark"> 
-                <!--sidebar navigation menu-->
+    <!-- <div class="container-fluid"> -->
+        <!-- <div class="row gx-5"> -->
+            <!-- sidbar -->
+            <div class="col-12 col-lg-2 bg-dark">
+                <!-- sidebar navigation menu -->
                 <ul class="nav flex-column">
                     <li class="nav-item mb-5">
-                        <!--navigation with img and margin, color-->
+                        <!-- navigation with img and margin, color -->
                         <a class="nav-link active text-white-50" aria-current="page" href="#"><svg class=" m-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <circle cx="16" cy="16" r="16" fill="#3751FF"/>
                             <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="url(#paint0_linear_584_285)"/>
@@ -88,11 +88,51 @@
                             </defs>
                          </svg>Subescription</a>
                     </li>
-                  </ul>     
+                </ul>     
             </div>
-        <!--main 10 column-->
-            <main class="col-12 col-sm-10">
+            <!--main 10 column-->
+            <main class="container mt-4 px-4 text-center">
+                
+                <!-- Cards -->
+                <div class="row gx-3">
+                    <div class="col-12 col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title ">Unresolved</h5>
+                                <p class="fs-2 fw-bold">60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="card text-primary border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title">Overdue</h5>
+                                <p class="fs-2 fw-bold">16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title ">Open</h5>
+                                <p class="fs-2 fw-bold">43</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title ">On hold</h5>
+                                <p class="fs-2 fw-bold">64</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cards end -->
 
+                <!-- graph and stats -->
+                <canvas id="line-chart"></canvas>
+                <!-- graph and stats end -->
             </main>
         </div>
     </div>
@@ -101,7 +141,7 @@
    
         
 
-
+    <script src="js/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
