@@ -8,3 +8,7 @@ body {
     font-size: 14px;
     top: 8px;
 }
+
+header img {
+    object-fit: cover;
+}
