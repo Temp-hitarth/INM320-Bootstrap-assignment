@@ -5,8 +5,8 @@
   "scripts": {
     "start": "lite-server --baseDir=\"public\""
   },
-  "author": "Sora Kheiry",
-  "license": "privet",
+  "author": "Sora Kheiry, Hitarth Bardoliwala",
+  "license": "private",
   "private":"true",
   "devDependencies": {
     "lite-server": "^2.6.1"

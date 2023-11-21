@@ -7,18 +7,18 @@
     <title>INM320 Bootstrap</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
 </head>
 <!--Sidbar 2 column-->
-<body>
-    <div class="container-fluid min-vh-100">
+<body class="d-flex">
+    <div class="container-fluid p-0">
         <div class="row">
-            <!--sidbar-->
-            <div class="col-2 bg-dark h-100 postion-fixed"> 
-                <!--sidebar navigation menu-->
+            <!-- sidbar -->
+            <div class="col-12 col-sm-2 bg-dark">
+                <!-- sidebar navigation menu -->
                 <ul class="nav flex-column">
                     <li class="nav-item mb-5">
-                        <!--navigation with img and margin, color-->
+                        <!-- navigation with img and margin, color -->
                         <a class="nav-link active text-white-50" aria-current="page" href="#"><svg class=" m-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <circle cx="16" cy="16" r="16" fill="#3751FF"/>
                             <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="url(#paint0_linear_584_285)"/>
@@ -86,12 +86,178 @@
                                     <rect width="16" height="16" fill="white"/>
                                 </clipPath>
                             </defs>
-                         </svg>Subescription</a>
+                         </svg>Subscription</a>
                     </li>
-                  </ul>     
+                </ul>     
             </div>
-        <!--main 10 column-->
-            <main class="col-12 col-sm-10">
+            
+            <!--main 10 column-->
+            <main class="container col-10 p-4">
+            <!-- header -->
+                <header class="mb-5 d-flex justify-content-between">
+                    <h3>Overview</h3>
+
+                    <div class="col-lg-3 col-12 p-0 d-flex justify-content-between align-items-center">
+                        <!-- search icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                        </svg>
+                        <p class="mb-0">|</p>
+                        <p class="mb-0">Hitarth Bardoliwala</p>
+                        <img src="assets/images/profile pic.png" class="img-thumbnail rounded-circle" width="36px" height="36px" alt="">
+                    </div>
+                </header>
+                <!-- Cards -->
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Unresolved</h5>
+                                <p class="fs-4 fw-bold">60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center text-primary border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Overdue</h5>
+                                <p class="fs-4 fw-bold">16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Open</h5>
+                                <p class="fs-4 fw-bold">43</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6 ">On hold</h5>
+                                <p class="fs-4 fw-bold">64</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cards end -->
+
+                <!-- graph and stats -->
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Image Card - Takes 8 columns on large screens, full width on smaller screens -->
+                        <div class="col-lg-8 col-12 p-0">
+                            <div class="card h-100 rounded-end-0">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title">Today's Trend</h5>
+                                    <p class="text-secondary">as of 25 May 2019 09:41 PM</p>
+                                    <div class="d-flex justify-content-end">
+                                        <p class="text-secondary-emphasis me-4"><img class="me-1" src="assets/images/blue divider.png" alt="">Today</p>
+                                        <p class="text-secondary me-4"><img class="me-1" src="assets/images/grey divider.png" alt="">Yesterday</p>
+                                    </div>
+                                    <img src="assets/images/full graph.png" class="p-4 mt-5" alt="image of a graph">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stacked Cards - Each takes 4 columns vertically on large screens, full width on smaller screens -->
+                        <div class="col-lg-4 col-12 p-0 d-flex flex-column justify-content-between">
+                            <div class="card text-center flex-fill rounded-start-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Resolved</h5>
+                                    <p class="card-text">449</p>
+                                </div>
+                            </div>
+
+                            <div class="card text-center flex-fill rounded-start-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Recieved</h5>
+                                    <p class="card-text">426</p>
+                                </div>
+                            </div>
+
+                            <div class="card text-center flex-fill rounded-start-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Average first response time</h5>
+                                    <p class="card-text">33m</p>
+                                </div>
+                            </div>
+
+                            <div class="card text-center flex-fill rounded-start-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Average response time</h5>
+                                    <p class="card-text">3h 8m</p>
+                                </div>
+                            </div>
+
+                            <div class="card text-center flex-fill rounded-start-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Resolution within SLA</h5>
+                                    <p class="card-text">94%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- graph and stats end -->
+
+                <!-- unresolved tickets and tasks -->
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Card with List -->
+                        <div class="col-md-6 mb-4 ps-0">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column justify-content-between p-0">
+                                    <div>    
+                                        <h5 class="card-title ps-3 pe-3 pt-3">Unresolved tickets <a href="#" class="position-relative float-end text-decoration-none">View details</a> </h5>
+                                        <p class="card-text text-secondary ps-3">Group: <span class="text-secondary-emphasis">Support</span></p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                    <!-- mouse hover over the list using list-group-item-action -->
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Waiting on Feature Request <span class="position-relative float-end">4238</span></li>
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Awaiting Customer Response <span class="position-relative float-end">1005</span></li>
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Awaiting Developer Fix <span class="position-relative float-end">914</span></li>
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Pending <span class="position-relative float-end">218</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card with Task Checklist -->
+                        <div class="col-md-6 mb-4 pe-0">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title mb-3">Tasks<a href="#" class="position-relative float-end text-decoration-none">View all</a></h5>
+                                    <p class="card-text text-secondary">Today</p>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item pt-3">
+                                            <!-- <input class="form-check-input me-1" type="checkbox" value="" id="CheckboxStretched"> -->
+                                            <label class="form-check-label stretched-link text-secondary" for="CheckboxStretched">Create new task</label><span class="btn btn-light position-relative float-end text-uppercase rounded-3">+</span>
+                                        </li>
+                                        <li class="list-group-item pt-3">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Finish ticket update </label><span class="btn btn-warning position-relative float-end text-uppercase text-white rounded-3">urgent</span>
+                                        </li>
+                                        <li class="list-group-item pt-3">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Create new ticket example</label><span class="btn btn-success position-relative float-end text-uppercase text-whiterounded-3">new</span>
+                                        </li>
+                                        <li class="list-group-item pt-3">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Update ticket report</label><span class="btn btn-light position-relative float-end text-uppercase rounded-3">default</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- unresolved tickets and tasks end-->
 
             </main>
         </div>
@@ -100,8 +266,6 @@
     
    
         
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
