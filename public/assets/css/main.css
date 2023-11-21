@@ -1,0 +1,10 @@
+body {
+    background: #F7F8FC;
+}
+
+.card-body a {
+    position: relative;
+    float: right;
+    font-size: 14px;
+    top: 8px;
+}

@@ -8,18 +8,17 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <!--Sidbar 2 column-->
 <body class="d-flex">
-    <!-- <div class="container-fluid p-0">
+    <div class="container-fluid p-0">
         <div class="row">
-            sidbar
+            <!-- sidbar -->
             <div class="col-12 col-sm-2 bg-dark">
-                sidebar navigation menu
+                <!-- sidebar navigation menu -->
                 <ul class="nav flex-column">
                     <li class="nav-item mb-5">
-                        navigation with img and margin, color
+                        <!-- navigation with img and margin, color -->
                         <a class="nav-link active text-white-50" aria-current="page" href="#"><svg class=" m-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <circle cx="16" cy="16" r="16" fill="#3751FF"/>
                             <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="url(#paint0_linear_584_285)"/>
@@ -90,38 +89,41 @@
                          </svg>Subscription</a>
                     </li>
                 </ul>     
-            </div> -->
+            </div>
             <!--main 10 column-->
-            <main class="container col-12 mt-4">
-                
+            
+            <main class="container col-10 p-5 mt-5">
+                <header>
+                    <h2>Overview</h2>
+                </header>
                 <!-- Cards -->
-                <div class="row text-center">
-                    <div class="col-12 col-sm-3 ps-0">
-                        <div class="card">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title fs-6 ">Unresolved</h5>
+                                <h5 class="card-title fs-6">Unresolved</h5>
                                 <p class="fs-4 fw-bold">60</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3">
-                        <div class="card text-primary border-primary">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center text-primary border-primary">
                             <div class="card-body">
-                                <h5 class="card-title fs-6 fs">Overdue</h5>
+                                <h5 class="card-title fs-6">Overdue</h5>
                                 <p class="fs-4 fw-bold">16</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3">
-                        <div class="card">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center">
                             <div class="card-body">
                                 <h5 class="card-title fs-6">Open</h5>
                                 <p class="fs-4 fw-bold">43</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 pe-0">
-                        <div class="card">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card text-center">
                             <div class="card-body">
                                 <h5 class="card-title fs-6 ">On hold</h5>
                                 <p class="fs-4 fw-bold">64</p>
@@ -132,101 +134,106 @@
                 <!-- Cards end -->
 
                 <!-- graph and stats -->
-
-                <div class="row mt-4">
-                    <div class="card-group p-0">
-                        <div class="card pe-0 col-12 col-sm-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Today's Trend</h5>
-                                <p class="text-secondary pb-5">as of 25 May 2019 09:41 PM</p>
-                                <img src="assets/images/full graph.png" alt="image of a graph">
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Image Card - Takes 8 columns on large screens, full width on smaller screens -->
+                        <div class="col-lg-8 col-12 mb-4 ps-0">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Today's Trend</h5>
+                                    <p class="text-secondary">as of 25 May 2019 09:41 PM</p>
+                                    <img src="assets/images/full graph.png" class="img-fluid" alt="image of a graph">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="flex-column text-center col-4 card-group">
-                            <div class="card">
+                        <!-- Stacked Cards - Each takes 4 columns vertically on large screens, full width on smaller screens -->
+                        <div class="col-lg-4 col-12 pe-0">
+                            <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title fs-6">Resolved</h5>
-                                    <p class="fs-4 fw-bold">449</p>
+                                    <h5 class="card-title">Resolved</h5>
+                                    <p class="card-text">449</p>
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title fs-6">Recieved</h5>
-                                    <p class="fs-4 fw-bold">426</p>
+                                    <h5 class="card-title">Recieved</h5>
+                                    <p class="card-text">426</p>
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title fs-6">Average first response time</h5>
-                                    <p class="fs-4 fw-bold">33m</p>
+                                    <h5 class="card-title">Average first response time</h5>
+                                    <p class="card-text">33m</p>
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title fs-6">Average response time</h5>
-                                    <p class="fs-4 fw-bold">3h 8m</p>
+                                    <h5 class="card-title">Average response time</h5>
+                                    <p class="card-text">3h 8m</p>
                                 </div>
                             </div>
-                            <div class="card">
+
+                            <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title fs-6">Resoultion with SLA</h5>
-                                    <p class="fs-4 fw-bold">94%</p>
+                                    <h5 class="card-title">Resolution within SLA</h5>
+                                    <p class="card-text">94%</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <!-- graph and stats end -->
 
                 <!-- unresolved tickets and tasks -->
-                <div class="row mt-4">
-                    <div class="col-12 col-sm-6 card">
-                        <div class="card-body">
-                            <h5 class="card-title fs-3">Unresolved tickets</h5>
-                            <a href="#">View details</a>
-                            <p>Group: Support</p>
-                            <ul class="list-group list-group-flush p-0">
-                                <li class="list-group-item">Waiting of feature Request</li>
-                                <li class="list-group-item">Awating Customer Response</li>
-                                <li class="list-group-item">Awating Developer Fix</li>
-                                <li class="list-group-item">Pending</li>
-                            </ul>
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Card with List -->
+                        <div class="col-md-6 mb-4 ps-0">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">List Card</h5>
+                                    <ul>
+                                        <li>Item 1</li>
+                                        <li>Item 2</li>
+                                        <li>Item 3</li>
+                                        <li>Item 4</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-10 col-sm-6 card">
-                        <div class="card-body">
-                            <h5 class="card-title fs-3">Tasks</h5>
-                            <p class="fs-6 text-secondary">Today</p>
-                            <p class="fs-6 text-secondary">Create a new task</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="task1">
-                                <label class="form-check-label" for="task1">
-                                    Default checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="task2">
-                                <label class="form-check-label" for="task2">
-                                    Checked checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="task3" checked>
-                                <label class="form-check-label" for="task3">
-                                    Checked checkbox
-                                </label>
+
+                        <!-- Card with Task Checklist -->
+                        <div class="col-md-6 mb-4 pe-0">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Task Checklist Card</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="task1">
+                                        <label class="form-check-label" for="task1">Task 1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="task2">
+                                        <label class="form-check-label" for="task2">Task 2</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="task3">
+                                        <label class="form-check-label" for="task3">Task 3</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="task4">
+                                        <label class="form-check-label" for="task4">Task 4</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- unresolved tickets and tasks end-->
-                <div class="row mt-4">
-                hello
-                </div>
+
             </main>
         </div>
     </div>
@@ -234,8 +241,6 @@
     
    
         
-
-    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
