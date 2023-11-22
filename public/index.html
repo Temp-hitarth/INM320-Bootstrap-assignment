@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-center text-primary border-primary">
+                        <div class="card text-center">
                             <div class="card-body">
                                 <h5 class="card-title fs-6">Overdue</h5>
                                 <p class="fs-4 fw-bold">16</p>
@@ -235,9 +235,34 @@
                                     <h5 class="card-title mb-3">Tasks<a href="#" class="position-relative float-end text-decoration-none">View all</a></h5>
                                     <p class="card-text text-secondary">Today</p>
                                     <ul class="list-group list-group-flush">
-                                    <li class="list-group-item pt-3">
-                                            <!-- <input class="form-check-input me-1" type="checkbox" value="" id="CheckboxStretched"> -->
-                                            <label class="form-check-label stretched-link text-secondary" for="CheckboxStretched">Create new task</label><span class="btn btn-light position-relative float-end text-uppercase rounded-3">+</span>
+                                        <li class="list-group-item pt-3">
+                                        
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Click to create a new task
+                                            </button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add a new task</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="input1" aria-describedby="text" placeholder="Create a task">
+                                                        </div>
+                                                    </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li class="list-group-item pt-3">
                                             <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">

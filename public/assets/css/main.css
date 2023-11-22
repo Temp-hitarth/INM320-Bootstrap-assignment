@@ -12,3 +12,8 @@ body {
 header img {
     object-fit: cover;
 }
+
+.card:hover {
+    color: blue;
+    border-color: blue;
+}
