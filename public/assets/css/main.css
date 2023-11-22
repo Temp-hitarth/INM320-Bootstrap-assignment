@@ -12,12 +12,3 @@ body {
 header img {
     object-fit: cover;
 }
-
-.custom-card {
-    padding: 25px;
-}
-
-.card:hover {
-    color: blue;
-    border-color: blue;
-}
