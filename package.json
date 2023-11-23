@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "lite-server --baseDir=\"public\""
+    "dev": "lite-server --baseDir=\"public\"",
+    "watch": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
   },
   "author": "Sora Kheiry, Hitarth Bardoliwala",
   "license": "private",
-  "private":"true",
+  "private": "true",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
   }
 }
+
+
+
